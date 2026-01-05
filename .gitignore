@@ -1,1 +1,63 @@
-.venv
+# Create .gitignore for ML project
+@"
+# Hugging Face models (DO NOT PUSH - too large!)
+albert-base-v2/
+bert-base-uncased/
+bertweet-base/
+deberta-v3-base/
+distilbert-base-uncased/
+electra-base-discriminator/
+roberta-base/
+t5-small/
+*.safetensors
+*.bin
+*.pth
+*.pt
+
+# Data files (usually shouldn't be on GitHub)
+*.csv
+*.npy
+*.npz
+*.pkl
+*.h5
+*.hdf5
+data/
+datasets/
+submissions/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+env.bak/
+venv.bak/
+pycache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Line endings
+*.[Cc][Rr][Ll][Ff]
+"@ | Out-File -FilePath .gitignore -Encoding UTF8
